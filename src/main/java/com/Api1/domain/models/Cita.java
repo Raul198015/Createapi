@@ -12,7 +12,7 @@ public class Cita{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 private Integer id;
-private String name;
+private String nombre;
 private String hora;
 private String ciudad;
 private String dia;
@@ -21,16 +21,16 @@ public Cita() {
 
 }
 
-public Cita(Integer id, String name, String hora, String ciudad, String dia) {
+public Cita(Integer id, String nombre, String hora, String ciudad, String dia) {
         this.id = id;
-        this.name = name;
+        this.nombre = nombre;
         this.hora = hora;
         this.ciudad = ciudad;
         this.dia = dia;
         }
 
-public Cita(String name, String hora, String ciudad, String dia) {
-        this.name = name;
+public Cita(String nombre, String hora, String ciudad, String dia) {
+        this.nombre = nombre;
         this.hora = hora;
         this.ciudad = ciudad;
         this.dia = dia;
@@ -44,12 +44,12 @@ public void setId(Integer id) {
         this.id = id;
         }
 
-public String getName() {
-        return name;
+public String getNombre() {
+        return nombre;
         }
 
-public void setName(String name) {
-        this.name = name;
+public void setNombre(String name) {
+        this.nombre = nombre;
         }
 
 public String getHora() {

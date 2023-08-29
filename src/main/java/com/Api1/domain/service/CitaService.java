@@ -32,7 +32,7 @@ public class CitaService {
         if (citabyID.isPresent()){
             Cita citaExisting = citabyID.get();
 
-            citaExisting.setName(cita.getName());
+            citaExisting.setNombre(cita.getNombre());
             citaExisting.setHora(cita.getHora());
             citaExisting.setCiudad(cita.getCiudad());
             citaExisting.setDia(cita.getDia());
